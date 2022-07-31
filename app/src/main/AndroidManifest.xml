@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shruti.whatsapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/newschat_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/newschat_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatsApp">
+        <activity
+            android:name=".Activity.Help" android:parentActivityName=".Activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Notification" android:parentActivityName=".Activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InviteFriend" android:parentActivityName=".Activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AboutUs"
+            android:exported="false"
+            android:parentActivityName=".Activity.SettingsActivity" />
+        <activity
+            android:name=".Activity.FindFriendsActivity"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/Theme.WhatsApp.NoActionBar" />
+        <activity
+            android:name=".Activity.PrivacyPolicy"
+            android:exported="false"
+            android:parentActivityName=".Activity.SettingsActivity" />
+        <activity
+            android:name=".Activity.CreateGroupChatActivity"
+            android:exported="false"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/Theme.WhatsApp.NoActionBar" />
+        <activity
+            android:name=".Activity.PhoneLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.GroupChatActivity" />
+        <activity android:name=".Activity.ChatDetailActivity" />
+        <activity android:name=".Activity.SignInActivity" />
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>

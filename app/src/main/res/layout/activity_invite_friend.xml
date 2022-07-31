@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activity.InviteFriend">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:text="Invitation is about for those people who are available on Your contacts list but they don't use News chat app. You can Invite them to Use app but it doesn't mean that your invitation will put them onto app."        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtAppInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo"
+        android:paddingTop="14dp"
+        android:text="It is a kind of application which allows you to register onto it by only Phone Number, the persons who are available on app and if they've your number, they can directly send you a message if you're available on app with the phone number they have."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/txtAppInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo1"
+        android:paddingTop="14dp"
+        android:text="To avoid this, when you receive a message from someone who's not available on your contacts list, news chat app on the chat screen displays a first message ADD TO CONTACTS or BLOCK. You can choose any of the above and continue."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    </RelativeLayout>
+
+</ScrollView>

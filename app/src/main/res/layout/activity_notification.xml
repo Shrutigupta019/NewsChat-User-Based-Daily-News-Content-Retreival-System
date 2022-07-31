@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activity.Notification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:text="Notification preferences can easily be managed in the app settings. It will automatically display a push notification to alert you of an incoming message.In other words, it makes your App messages a higher priority than other notifications you receive on your phone."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtAppInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppInfo"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:text="You can change notifications for messages, groups, and calls by choosing:-"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txtAppInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo1"
+        android:text="- Whether to turn conversation tones for incoming and outgoing messages on or off.Notification tone or ringtone.
+"       android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo2"
+        android:text="- Notification tone or ringtone. "
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo3"
+        android:text="- Vibration duration."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo4"
+        android:text="- Whether to show popup notification."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo5"
+        android:text="- Notification light color for supported phones."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo6"
+        android:text="- Whether to use high priority notifications on Android 5 and newer. This shows previews of notifications at the top of your screen and can be used to disable peeking notifications."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo7"
+        android:text="- Turning off high priority notifications will result in NewsChat notifications being being placed lower on your screen."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/txtAppInfo9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo8"
+        android:text="- You can customize notifications by choosing different options for tone, vibration, popup, and light."
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+    </RelativeLayout>
+</ScrollView>

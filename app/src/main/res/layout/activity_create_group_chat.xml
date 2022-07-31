@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".Activity.CreateGroupChatActivity">
+
+
+    <include
+        android:id="@+id/create_group_chat_bar_layout"
+        layout="@layout/app_bar_layout"></include>
+
+    <ScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myLinearLayout"
+        android:layout_below="@+id/create_group_chat_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/create_group_chat_text_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="60dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/input_group_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et"
+            android:ems="10"
+            android:hint="Enter your Message"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_marginStart="3dp"/>
+
+        <ImageView
+            android:id="@+id/send_message_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/round_shape"
+            app:tint="@color/black"
+            app:srcCompat="@drawable/ic_right_arrow"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/bg"-->
+<!--    tools:context=".Activity.CreateGroupChatActivity">-->
+
+
+<!--&lt;!&ndash;    <include&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/create_group_chat_bar_layout"&ndash;&gt;-->
+<!--&lt;!&ndash;        layout="@layout/app_bar_layout" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <ScrollView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/my_scroll_view"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_above="@+id/myLinearLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@+id/create_group_chat_bar_layout">&ndash;&gt;-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/chatRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/createGrouplinearLayout"-->
+<!--        android:layout_below="@+id/toolbar"></androidx.recyclerview.widget.RecyclerView>-->
+
+<!--&lt;!&ndash;    </ScrollView>&ndash;&gt;-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/createGrouplinearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/input_group_message"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/bg_et"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Enter your Message"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_marginStart="3dp"/>-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/send_message_button"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/bg_sender"/>&ndash;&gt;-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/send_message_button"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="4dp"-->
+<!--            android:layout_marginRight="4dp"-->
+<!--            android:background="@drawable/round_shape"-->
+<!--            app:tint="@color/colorPrimary"-->
+<!--            app:srcCompat="@drawable/ic_right_arrow"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="?attr/actionBarTheme">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgBackArrow"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_left_arrow"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:tint="@color/white" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/userName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:text="Group Name"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/imgBackArrow"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+<!--</RelativeLayout>-->

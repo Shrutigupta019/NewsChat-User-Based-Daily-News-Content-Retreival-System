@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activity.AboutUs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:text="Our app is started as an alternative to SMS and newspaper. Our product now supports sending and receiving a variety of media: text, photos, videos, documents, and location, video calls as well as getting updated about what's going around the world through news from various authenticated news channels.  Some of your most personal moments are shared with this app which is why we built end-to-end encryption."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtAppInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo"
+        android:paddingTop="14dp"
+        android:text="Keep in touch with the groups of people that matter the most, like your family or coworkers. With group chats, you can share messages, photos, and videos"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/txtAppInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:layout_below="@id/txtAppInfo1"
+        android:paddingTop="14dp"
+        android:text="Keep in touch with the groups of people that matter the most, like your family or coworkers. With group chats, you can share messages, photos, and videos . You can also name your group, mute or customize notifications, and more."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activity.Help">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:text="About forwarding limits ,How to update App ,how to change group privacy settings"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txtAppInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppInfo"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:text="About forwarding limits ,How to update App ,how to change group privacy settingsHow to verify your phone number ,restore your chat history , manage your notifications , restore your chat history ,to manage your notifications, use status"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txtAppInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppInfo1"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:text="About App and Desktop how to log in or out ,how to manage your notifications, How to verify your phone number.How to edit your profile, send media, contacts, or location."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txtAppInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppInfo2"
+        android:padding="14dp"
+        android:paddingStart="14dp"
+        android:paddingTop="14dp"
+        android:text="In short we can say it tells about how to download or uninstall newschat app ,Download and Installation ,Account and Profile , Chats ,Contacts ,Voice and Video Calls , Security and Privacy, Status ,Troubleshooting"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </RelativeLayout>
+</ScrollView>

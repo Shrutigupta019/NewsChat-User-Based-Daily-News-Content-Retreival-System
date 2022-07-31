@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359713480863",
+    "project_id": "whatsapp-54444",
+    "storage_bucket": "whatsapp-54444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359713480863:android:b041db9893b3a08c9a82aa",
+        "android_client_info": {
+          "package_name": "com.shruti.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359713480863-2r9g94h65saglj9e9hsmko72f0nlf231.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6BSK7Yb0q0awn3tho4pCNhUFTC4-TXyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359713480863-2r9g94h65saglj9e9hsmko72f0nlf231.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

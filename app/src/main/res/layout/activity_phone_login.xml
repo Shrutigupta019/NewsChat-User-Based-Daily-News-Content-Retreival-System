@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.PhoneLoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="17dp"
+        android:text="Use Country code before writing Phone no."
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/phone_nnumber_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="17dp"
+        android:drawableStart="@drawable/ic_call"
+        android:hint="Write phone number here..."
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/verification_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/phone_nnumber_input"
+            android:padding="5dp"
+            android:hint="Write verification code here..."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            />
+
+
+    <Button
+        android:id="@+id/send_ver_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verification_code_input"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:text="Send Verification Code"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_ver_code_button"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    </RelativeLayout>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Activity.PhoneLoginActivity"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#F4D0D3">-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="15dp">-->
+
+
+<!--&lt;!&ndash;            <com.hbb20.CountryCodePicker&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/ccp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="126dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginRight="5dp" />&ndash;&gt;-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/phone_nnumber_input"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="4dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:ems="10"-->
+<!--                android:gravity="center"-->
+<!--                android:hint="Phone Number"-->
+<!--                android:inputType="phone"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#000000"-->
+<!--                app:layout_constraintTop_toBottomOf="parent" />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/verification_code_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="Name" />-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+<!--            <FrameLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/verify_button"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:padding="15dp"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    android:text="GET OTP"-->
+<!--                    app:cornerRadius="4dp" />-->
+
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progress_bar_sending_otp"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:visibility="gone"-->
+<!--                    />-->
+<!--            </FrameLayout>-->
+<!--        </LinearLayout>-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/send_ver_code_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginEnd="17dp"-->
+<!--                android:background="@drawable/ic_call"-->
+<!--                android:text="Send Verification Code"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@android:color/background_light"-->
+<!--                android:textSize="19sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </RelativeLayout>-->
+
+    <!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
